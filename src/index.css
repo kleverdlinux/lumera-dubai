@@ -104,6 +104,20 @@
   background-color: #1c1b1a;
 }
 
+/* Ocultar barra de desplazamiento nativa manteniendo el desplazamiento suave */
+html,
+body {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
 body {
   width: 100vw;
   height: 100%;
